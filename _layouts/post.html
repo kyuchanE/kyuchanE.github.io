@@ -40,7 +40,9 @@ layout: home
           <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google+" rel="nofollow" target="_blank"><div data-icon='ei-sc-google-plus' data-size='s'></div></a>
         </div>
       </div>
-
+      {% if site.disqus-identifier %}
+              {% include disqus-comments.html %}
+            {% endif %}
     </div> <!-- /.c-wrap-content -->
   </div> <!-- /.c-article__content -->
 </article> <!-- /.c-article-page -->
