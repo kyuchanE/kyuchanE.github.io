@@ -1,30 +1,53 @@
-# ----------------------- #
-#      Main Configs       #
-# ----------------------- #
+title: Welcome to Flexton
+description: Flexton is a responsive and ultra-minimal theme for Jekyll.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "flexton.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-url: http://yoursite.com
-title: chan9U Android Blog
-email: your-email@domain.com
-author: chan9U
-description: > # "Write an awesome description for your new site here.
-  You can edit this line in _config.yml. It will appear in your document
-  head meta (for Google search results) and in your feed.xml site
-  description.
-copyright: 'Copyright &copy; 2015 Your Name. All Rights Reserved.'
-credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+# Author
+author-name:    Clayton Hanson
+author-image:   1.jpg
+author-job:     Web Developer
+author-email:   your-email@domain.com # Add your email for contant form.
+author-twitter: artemsheludko_ # Add your twitter account
+about-author:   I am a web developer focusing on front-end development. Always hungry to keep learning.
 
-# ----------------------- #
-#    Jekyll & Plugins     #
-# ----------------------- #
+# Social settings
+social-twitter:   artemsheludko_
+social-facebook:
+social-github:    artemsheludko
+social-pinterest: artemsheludko
+social-instagram: artemsheludko_
+social-youtube:
+social-vk:   
+social-linkedin:
+
+# Newsletter
+mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1
+
+# Comment Section (Disqus)
+disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /:year/:month/:day/:title/
+plugins:
+  - jekyll-paginate
 
-# ----------------------- #
-#   3rd Party Settings    #
-# ----------------------- #
+paginate: 7
+paginate_path: "/page/:num/"
 
-social:
-  - title: github
-    url: https://github.com/kyuchanE
+include:
+  - _pages
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor

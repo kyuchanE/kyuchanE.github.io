@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
-	{% include head.html %}
+<html lang="en">
+{% include head.html %}
 
-	<body>
-		{% include header.html %}
-		{% include about.html %}
-		{% include page_content.html %}
-		{% include contact.html %}
-		{% include footer.html %}
-		{% include js.html %}
-	</body>
+<body>
+  {% if site.google-analytics %}
+    {% include analytics.html %}
+  {% endif %}
+  <div class="o-wrapper">
+    {{ content }}
+  </div> <!-- /.o-wrapper -->
+  <div class="c-top" data-icon='ei-chevron-up' data-size='s' title="Scroll To Top"></div> <!-- /.c-top -->
+  {% include javascripts.html %}
+</body>
 </html>
