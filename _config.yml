@@ -7,9 +7,7 @@ url: https://kyuchane.github.io # the base hostname & protocol for your site, e.
 author-name:    chan9U
 author-image:   me.jpg
 author-job:     Android Developer
-author-email:   chankyuh@gmail.com
-author-github:   https://github.com/kyuchanE # Add your email for contant form.
-#author-twitter: artemsheludko_ # Add your twitter account
+author-github:   https://github.com/kyuchanE
 about-author:   I am a Android developer.
 
 # Social settings
