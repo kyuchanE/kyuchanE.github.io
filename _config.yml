@@ -4,7 +4,7 @@ baseurl: https://kyuchane.github.io # the subpath of your site, e.g. /blog
 url: https://kyuchane.github.io # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author
-author-name:    chan9U
+author-name:    Clayton Hanson
 author-image:   me.jpg
 author-job:     Android Developer
 about-author:   I am a Android developer.  If you want commuication, send e-mail ( chankyuh@gmail.com )
